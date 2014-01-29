@@ -1,0 +1,4 @@
+aiApps
+======
+
+my django apps
