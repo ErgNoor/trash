@@ -1,4 +1,0 @@
-aiApps
-======
-
-my django apps
