@@ -1,0 +1,13 @@
+*** Settings ***
+Library    GoogleSearch.py  WITH NAME  GoogleSearch
+
+*** Variables ***
+# ${search_locators}=    get locators
+
+*** Keywords ***
+Search
+    [Arguments]  ${search_text}
+    Input Text    &{GoogleSearch.locators}[search_input]  ${search_text}
+    Click Element    &{GoogleSearch.locators}[submit_search_button]
+    # Input Text    &{search_locators}[search_input]  ${search_text}
+    # Click Element    &{search_locators}[submit_search_button]
